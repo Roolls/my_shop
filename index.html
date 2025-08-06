@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>منتجاتي</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0d0d0d; /* أسود غامق */
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            color: white;
+        }
+        h1 {
+            background-color: #0055ff; /* أزرق */
+            color: white;
+            padding: 20px;
+            margin: 0;
+        }
+        .category-title {
+            background-color: #0055ff; /* أزرق */
+            color: white;
+            padding: 15px;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 40px;
+            border-radius: 5px;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .product {
+            background: #1a1a1a; /* أسود فاتح */
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+            transition: transform 0.2s ease;
+        }
+        .product:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 15px rgba(0,85,255,0.7);
+        }
+        .product img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        .product h3 {
+            font-size: 18px;
+            margin: 10px 0 5px;
+            color: #3399ff; /* أزرق فاتح */
+        }
+        .product p {
+            color: #cccccc;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>منتجاتي</h1>
+
+    <!-- فئة 1 -->
+    <div class="category-title">روبلوكس ستديو</div>
+    <div class="container">
+        <div class="product">
+            <img src="https://cdn.discordapp.com/attachments/1364565445620924486/1402759165813723297/0720fda7-f3e1-4fc2-b286-daa5cdd0b229.png?ex=689514c7&is=6893c347&hm=dbb47e85647278f177819c7b9a82e4cbb8708a2880e24cc3e13f646da14c12c2&" alt="phub">
+            <h3>phub</h3>
+            <p>15 ريال</p>
+        </div>
+        <div class="product">
+            <img src="https://via.placeholder.com/200" alt="سماعات">
+            <h3>سماعات</h3>
+            <p>200 ريال</p>
+        </div>
+    </div>
+
+    <!-- فئة 2 -->
+    <div class="category-title">الملابس</div>
+    <div class="container">
+        <div class="product">
+            <img src="https://via.placeholder.com/200" alt="قميص">
+            <h3>قميص</h3>
+            <p>50 ريال</p>
+        </div>
+        <div class="product">
+            <img src="https://via.placeholder.com/200" alt="بنطال">
+            <h3>بنطال</h3>
+            <p>80 ريال</p>
+        </div>
+    </div>
+
+</body>
+</html>
